@@ -1,0 +1,20 @@
+@import "./fontiran.css";
+@import "../fonts/irib/irib.css";
+
+html, body {
+    margin: 0;
+    background: #131313;
+    color: white;
+    direction: rtl;
+    text-align: right;
+    font-family: IRANSans, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a.nuxt-link-active {
+    color: rgba(255, 34, 85, 1) !important
+}

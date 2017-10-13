@@ -1,0 +1,5 @@
+dist
+static
+node_modules
+nuxt.config.js
+postcss.config.js

@@ -1,0 +1,28 @@
+{
+  "name": "aut-tv",
+  "description": "AUT TV",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "start": "nuxt start"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^4.0.1",
+    "@nuxtjs/proxy": "^1.1.1",
+    "@nuxtjs/pwa": "^1.0.2",
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2",
+    "form-data": "^2.3.1",
+    "keyv": "^3.0.0",
+    "nuxt": "^1.0.0-r11",
+    "vue-spinner": "^1.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.6.1",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-vue": "beta",
+    "nodemon": "^1.12.1"
+  }
+}
