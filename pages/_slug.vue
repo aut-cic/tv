@@ -5,7 +5,7 @@
       {{ channel.title }}
     </h1>
 
-    <div class="player"></div>
+    <video-player class="player" :options="playerOptions" :playsinline="true" />
 
     <div>
       <h4>{{ channel.info.title }}</h4>
@@ -26,8 +26,12 @@
 <style scoped>
 .player {
   background: black;
-  height: 480px;
   width: 100%;
+}
+
+.video-player-box {
+  width: 100%;
+  height: 100%;
 }
 
 h1 {
@@ -37,12 +41,33 @@ h1 {
 
 <script>
 export default {
-  async fetch ({ store, params }) {
+  async fetch ({ store, params, redirect }) {
+    if (!params.slug) {
+      return redirect('/tv1')
+    }
+
     await store.dispatch('FETCH_CHANNEL', params.slug)
   },
   computed: {
+    slug () {
+      return this.$route.params.slug
+    },
     channel () {
-      return this.$store.state.channels[this.$route.params.slug]
+      return this.$store.state.channels[this.slug]
+    },
+    playerOptions () {
+      return {
+        fluid: true,
+        muted: true,
+        language: 'fa',
+
+        poster: require("assets/images/channel/" + this.slug + ".jpg"),
+        sources: [{
+          type: "video/mp4",
+          src: "https://cdn.theguardian.tv/webM/2015/07/20/150716YesMen_synd_768k_vp8.webm"
+        }],
+
+      }
     }
   }
 }

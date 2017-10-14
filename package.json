@@ -17,7 +17,9 @@
     "form-data": "^2.3.1",
     "keyv": "^3.0.0",
     "nuxt": "^1.0.0-r11",
-    "vue-spinner": "^1.0.2"
+    "video.js": "^6.2.8",
+    "vue-spinner": "^1.0.2",
+    "vue-video-player": "^4.0.4"
   },
   "devDependencies": {
     "eslint": "^4.6.1",
