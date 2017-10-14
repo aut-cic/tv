@@ -18,3 +18,17 @@ a {
 a.nuxt-link-active {
     color: rgba(255, 34, 85, 1) !important
 }
+
+.progress {
+    z-index: 1000000;
+}
+  
+.page-enter-active, .page-leave-active {
+    transition: all .3s cubic-bezier(0.86, 0, 0.07, 1);
+    opacity: 1;
+}
+
+.page-enter, .page-leave-active {
+    opacity: 0;
+}
+  

@@ -5,20 +5,23 @@
       {{ channel.title }}
     </h1>
 
-    <video-player class="player" :options="playerOptions" :playsinline="true" />
+    <video-player v-if="channel.src" class="player" :options="playerOptions" :playsinline="true" />
+    <div v-else class="player">
+      <span>امکان پخش این کانال  به زودی</span>
+    </div>
 
-    <div>
-      <h4>{{ channel.info.title }}</h4>
-
+    <div v-if="info">
+      <h4>{{ info.title }}</h4>
+      <hr>
       <p>
         <span>مدت زمان: </span>
-        <span>{{ channel.info.duration || 'نامشخص' }}</span>
+        <span>{{ info.duration || 'نامشخص' }}</span>
       </p>
 
-      <p v-html="channel.info.summary"></p>
-
-      <hr>
-
+      <p v-html="info.summary"></p>
+    </div>
+    <div v-else>
+      <span>لطفا شکیبا باشید ...</span>
     </div>
   </div>
 </template>
@@ -27,6 +30,10 @@
 .player {
   background: black;
   width: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .video-player-box {
@@ -41,12 +48,18 @@ h1 {
 
 <script>
 export default {
-  async fetch ({ store, params, redirect }) {
+  async fetch ({ params, redirect }) {
     if (!params.slug) {
       return redirect('/tv1')
     }
-
-    await store.dispatch('FETCH_CHANNEL', params.slug)
+  },
+  async mounted () {
+    await this.fetch()
+  },
+  methods: {
+    async fetch () {
+      await this.$store.dispatch('FETCH_CHANNEL', this.slug)
+    }
   },
   computed: {
     slug () {
@@ -55,16 +68,26 @@ export default {
     channel () {
       return this.$store.state.channels[this.slug]
     },
+    info () {
+      return this.$store.state.info[this.slug]
+    },
     playerOptions () {
       return {
         fluid: true,
         muted: true,
         language: 'fa',
 
-        poster: require("assets/images/channel/" + this.slug + ".jpg"),
+        html5: {
+          hls: {
+            debug: true,
+            withCredentials: true
+          }
+        },
+
+        poster: require('assets/images/channel/' + this.slug + '.jpg'),
         sources: [{
-          type: "video/mp4",
-          src: "https://cdn.theguardian.tv/webM/2015/07/20/150716YesMen_synd_768k_vp8.webm"
+          type: 'application/x-mpegURL',
+          src: '/play/' + this.channel.src
         }],
 
       }

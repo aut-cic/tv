@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="body">
     <nav @click="toggle">
       <img src="~/assets/images/mic.gif" height="20px" />
       <span>تلویزیون اینترنتی امیرکبیر</span>
     </nav>
     <div class="container">
       <aside :class="{ show: sidebar }">
-        <div class="channel" v-for="channel in $store.state.channels" :key="channel.slug">
+        <div class="channel" :class="{ live: channel.src }" v-for="channel in $store.state.channels" :key="channel.slug">
           <router-link :to="`/${channel.slug}`" @click.native="toggle">
             <i :class="`icon-${channel.slug}`"></i>
             <span>{{ channel.title }}</span>
@@ -21,6 +21,11 @@
 </template>
 
 <style scoped>
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
 nav {
   height: 56px;
   background: #232323;
@@ -32,32 +37,50 @@ nav {
 }
 
 nav img {
-  padding-left: .5em; 
+  padding-left: .5em;
 }
 
 .container {
   display: flex;
+  flex: 1;
   overflow-x: hidden;
 }
 
 aside {
   width: 240px;
-  padding: 20px;
+  padding: 0 20px;
   background: #1c1c1c;
-  /* max-height: calc(100vh-56px); */
   box-shadow: -1px 0 4px black;
+  z-index: 9999;
+  overflow-y: scroll;
+  height: calc(100vh-56px);
+  max-height: calc(100vh-56px);
+}
+
+aside::-webkit-scrollbar {
+    width: .3rem;
+}
+ 
+aside::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+}
+
+aside::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }
 
 @media screen and (max-width: 1050px) {
   aside {
     position: absolute;
-    right: 0;
-    display: none;
-    transition: all 1s;
+    transform: translateX(300px);
+    transition: all .5s;
   }
 
   aside.show {
+    transform: translateX(0);
     display: block;
+    right: 0;
   }
 }
 
@@ -77,6 +100,10 @@ main>div {
   display: flex;
   height: 50px;
   cursor: pointer;
+}
+
+.channel.live i {
+  color: green;
 }
 
 .channel i {

@@ -4,6 +4,7 @@ export default {
     state() {
         return {
             channels: {}, // slug => channel
+            info: {},     // slug => channel info
         }
     },
     mutations: {
@@ -17,7 +18,7 @@ export default {
             if (!state.channels[slug]) {
                 return
             }
-            Vue.set(state.channels[slug], 'info', info)
+            Vue.set(state.info, slug, info)
         }
     },
     actions: {

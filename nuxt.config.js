@@ -1,4 +1,10 @@
 module.exports = {
+  mode: 'spa',
+
+  build: {
+    extractCSS: true
+  },
+
   manifest: {
     name: 'تلویزیون اینترنتی امیرکبیر',
     short_name: 'aut-tv',
@@ -6,15 +12,24 @@ module.exports = {
     theme_color: '#232323'
   },
 
-  mode: 'spa',
-
   loading: {
     color: 'rgba(255, 34, 85, 0.6)'
   },
 
+  loadingIndicator: {
+    name: 'chasing-dots',
+    color: 'grey',
+    background: '#131313'
+  },
+
   modules: [
     '@nuxtjs/pwa',
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    ['@nuxtjs/proxy', {
+      pathRewrite: {
+        '^/play': '/'
+      }
+    }]
   ],
 
   plugins: [
@@ -27,6 +42,10 @@ module.exports = {
       handler: '~/api'
     }
   ],
+
+  proxy: {
+    '/play': 'http://172.16.4.136:4028'
+  },
 
   css: [
     '~/assets/css/app.css'
