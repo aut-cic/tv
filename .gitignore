@@ -4,3 +4,4 @@
 node_modules
 *.log*
 .nuxt
+.yarn_mirror
