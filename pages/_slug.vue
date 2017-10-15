@@ -6,9 +6,10 @@
     </h1>
 
     <video-player v-if="channel.src" class="player" :options="playerOptions" :playsinline="true" />
-    <div v-else class="player">
+
+    <!-- <div v-else class="player">
       <span>امکان پخش این کانال  به زودی</span>
-    </div>
+    </div> -->
 
     <div v-if="info">
       <h4>{{ info.title }}</h4>
@@ -86,8 +87,8 @@ export default {
 
         poster: require('assets/images/channel/' + this.slug + '.jpg'),
         sources: [{
-          type: 'application/x-mpegURL',
-          src: '/play/' + this.channel.src
+          type: 'video/mp4',
+          src: 'http://172.16.4.136:4022/udp/239.100.0.1:1234/'
         }],
 
       }

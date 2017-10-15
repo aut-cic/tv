@@ -44,7 +44,7 @@ module.exports = {
   ],
 
   proxy: {
-    '/play': 'http://172.16.4.136:4028'
+    '/play': 'http://172.16.4.136:4022',
   },
 
   css: [
