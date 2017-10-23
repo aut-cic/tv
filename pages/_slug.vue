@@ -87,8 +87,9 @@ export default {
 
         poster: require('assets/images/channel/' + this.slug + '.jpg'),
         sources: [{
-          type: 'video/mp4',
-          src: 'http://172.16.4.136:4022/udp/239.100.0.1:1234/'
+          type: 'application/x-mpegURL',
+          withCredentials: false,
+          src: `http://tv.aut.ac.ir/hls/${this.channel.src}/stream.m3u8`,
         }],
 
       }
