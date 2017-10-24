@@ -7,7 +7,7 @@ module.exports = {
 
   manifest: {
     name: 'تلویزیون اینترنتی امیرکبیر',
-    short_name: 'aut-tv',
+    short_name: 'تلویزیون امیرکبیر',
     dir: 'rtl',
     theme_color: '#232323'
   },
@@ -23,7 +23,7 @@ module.exports = {
   },
 
   modules: [
-    '@nuxtjs/pwa',
+    ['@nuxtjs/pwa', { workbox: false }],
     '@nuxtjs/axios',
     ['@nuxtjs/proxy', {
       pathRewrite: {

@@ -7,9 +7,9 @@
 
     <video-player v-if="channel.src" class="player" :options="playerOptions" :playsinline="true" />
 
-    <!-- <div v-else class="player">
+    <div v-else class="player">
       <span>امکان پخش این کانال  به زودی</span>
-    </div> -->
+    </div>
 
     <div v-if="info">
       <h4>{{ info.title }}</h4>

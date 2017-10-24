@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const axios = require('axios')
 const cheerio = require('cheerio')
 const Keyv = require('keyv')
-const { channels, getChannelBySlug } = require('../lib/channels')
+const { getChannels, getChannelBySlug } = require('../lib/channels')
 
 // Initialize express app
 const app = express()
@@ -14,7 +14,7 @@ app.use(bodyParser.json())
  */
 app.get('/channels', (req, res) => {
     res.json({
-        channels
+        channels: getChannels()
     })
 })
 

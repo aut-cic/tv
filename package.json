@@ -20,6 +20,7 @@
     "video.js": "^6.2.8",
     "videojs-contrib-hls": "^5.11.1",
     "videojs-contrib-hls.js": "^3.1.0",
+    "vue-clickaway": "^2.1.0",
     "vue-spinner": "^1.0.2",
     "vue-video-player": "^4.0.4"
   },
