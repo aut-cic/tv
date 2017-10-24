@@ -3,7 +3,8 @@ import VueVideoPlayer from 'vue-video-player'
 import 'video.js/dist/video-js.css'
 import 'video.js/dist/lang/fa'
 
-import 'videojs-contrib-hls/dist/videojs-contrib-hls'
+// import 'videojs-contrib-hls/dist/videojs-contrib-hls'
+import 'videojs-contrib-hls.js'
 
 Vue.use(VueVideoPlayer)
 

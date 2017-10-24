@@ -79,16 +79,15 @@ export default {
         language: 'fa',
 
         html5: {
-          hls: {
+          hlsjsCOnfig: {
+            withCredentials: false,
             debug: true,
-            withCredentials: true
           }
         },
 
         poster: require('assets/images/channel/' + this.slug + '.jpg'),
         sources: [{
           type: 'application/x-mpegURL',
-          withCredentials: false,
           src: `http://tv.aut.ac.ir/hls/${this.channel.src}/stream.m3u8`,
         }],
 

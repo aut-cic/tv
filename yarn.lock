@@ -2638,6 +2638,12 @@ he@1.1.x, he@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/he/-/he-1.1.1.tgz#93410fd21b009735151f8868c2f271f3427e23fd"
 
+hls.js@^0.8.5:
+  version "0.8.5"
+  resolved "https://registry.yarnpkg.com/hls.js/-/hls.js-0.8.5.tgz#1f76a0db72ab9eaeca788d282bcf0f1cd7443f41"
+  dependencies:
+    url-toolkit "^2.0.1"
+
 hmac-drbg@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/hmac-drbg/-/hmac-drbg-1.0.1.tgz#d2745701025a6c775a6c545793ed502fc0c649a1"
@@ -5745,6 +5751,10 @@ url-toolkit@1.0.9:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/url-toolkit/-/url-toolkit-1.0.9.tgz#6647c84f931c54e1e61fa3b33e10ad34161ed4d9"
 
+url-toolkit@^2.0.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/url-toolkit/-/url-toolkit-2.1.1.tgz#96c2da3cd672df1aa2ac7fc89240b2dcf5c99a80"
+
 url@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/url/-/url-0.11.0.tgz#3838e97cfc60521eb73c525a8e55bfdd9e2e28f1"
@@ -5840,6 +5850,12 @@ video.js@^6.2.8:
     videojs-ie8 "1.1.2"
     videojs-vtt.js "0.12.4"
     xhr "2.4.0"
+
+videojs-contrib-hls.js@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/videojs-contrib-hls.js/-/videojs-contrib-hls.js-3.1.0.tgz#59c8ea4a77a8afe7647455ebd105b3dac846437f"
+  dependencies:
+    hls.js "^0.8.5"
 
 videojs-contrib-hls@^5.11.1:
   version "5.11.1"
