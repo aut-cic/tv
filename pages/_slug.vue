@@ -37,60 +37,63 @@
   justify-content: center;
 }
 
-.video-player-box {
-  width: 100%;
-  height: 100%;
-}
-
 h1 {
   color: rgba(255, 34, 85, 1);
 }
 </style>
 
+<style>
+.player > * {
+  width: 100%;
+  min-height: 450px;
+}
+</style>
+
 <script>
 export default {
-  async fetch ({ params, redirect }) {
+  async fetch({ params, redirect }) {
     if (!params.slug) {
       return redirect('/tv1')
     }
   },
-  async mounted () {
+  async mounted() {
     await this.fetch()
   },
   methods: {
-    async fetch () {
+    async fetch() {
       await this.$store.dispatch('FETCH_CHANNEL', this.slug)
     }
   },
   computed: {
-    slug () {
+    slug() {
       return this.$route.params.slug
     },
-    channel () {
+    channel() {
       return this.$store.state.channels[this.slug]
     },
-    info () {
+    info() {
       return this.$store.state.info[this.slug]
     },
-    playerOptions () {
+    playerOptions() {
       return {
         fluid: true,
-        muted: true,
+        muted: false,
         language: 'fa',
 
         html5: {
           hlsjsCOnfig: {
             withCredentials: false,
-            debug: true,
+            debug: false
           }
         },
 
         poster: require('assets/images/channel/' + this.slug + '.jpg'),
-        sources: [{
-          type: 'application/x-mpegURL',
-          src: `http://tv.aut.ac.ir/live/irib/${this.channel.src}/stream.m3u8`,
-        }],
-
+        sources: [
+          {
+            type: 'application/x-mpegURL',
+            src: `http://tv.aut.ac.ir/live/irib/${this.channel.src}/stream.m3u8`
+          }
+        ]
       }
     }
   }

@@ -1,7 +1,7 @@
 <template>
   <div class="body">
     <nav @click="toggle">
-      <img src="~/static/icon.png" height="20px" />
+      <img src="~/static/icon.png" height="35px" style="margin-top: -10px;" />
       <span>تلویزیون اینترنتی امیرکبیر</span>
     </nav>
     <div class="container">
@@ -17,9 +17,9 @@
         <nuxt/>
         <footer>
         <p>
-          <span>طراحی گروه نرم افزاری فندق</span>
-          <span> - </span>
           <span>مرکز انفورماتیک دانشگاه صنعتی امیرکبیر</span>
+          <span> - </span>
+          <span>طراحی: گروه نرم افزاری فندق</span>
         </p>
       </footer>
       </main>
@@ -70,6 +70,7 @@ aside {
   overflow-y: scroll;
   height: calc(100vh-56px);
   max-height: calc(100vh-56px);
+  padding-right:10px;
 }
 
 aside::-webkit-scrollbar {

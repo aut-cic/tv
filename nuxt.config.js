@@ -17,7 +17,7 @@ module.exports = {
   },
 
   loadingIndicator: {
-    name: 'chasing-dots',
+    name: false,
     color: 'grey',
     background: '#131313'
   },
