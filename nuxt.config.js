@@ -25,7 +25,7 @@ module.exports = {
   modules: [
     ['@nuxtjs/pwa', { workbox: false }],
     '@nuxtjs/axios',
-    ['@nuxtjs/analytics', { id: 'UA-108642664-1' }]
+    ['@nuxtjs/google-analytics', { id: 'UA-108642664-1' }]
   ],
 
   plugins: [
