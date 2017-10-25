@@ -25,11 +25,7 @@ module.exports = {
   modules: [
     ['@nuxtjs/pwa', { workbox: false }],
     '@nuxtjs/axios',
-    ['@nuxtjs/proxy', {
-      pathRewrite: {
-        '^/play': '/'
-      }
-    }]
+    ['@nuxtjs/analytics', { id: 'UA-108642664-1' }]
   ],
 
   plugins: [
@@ -43,9 +39,9 @@ module.exports = {
     }
   ],
 
-  proxy: {
-    '/play': 'http://172.16.4.136:4022',
-  },
+  // proxy: {
+  //   '/play': 'http://172.16.4.136:4022',
+  // },
 
   css: [
     '~/assets/css/app.css'
