@@ -51,34 +51,50 @@ h1 {
 
 <script>
 export default {
+  data() {
+    return {
+      enter: Date.now()
+    };
+  },
+  beforeDestroy() {
+    const diffMS = Date.now() - this.enter
+
+    this.$ga.time({
+      timingCategory: "Channel Views",
+      timingVar: "timeOnPage",
+      timingValue: diffMS,
+      timingLabel: this.slug
+    })
+  },
   async fetch({ params, redirect }) {
     if (!params.slug) {
-      return redirect('/tv1')
+      return redirect("/tv1");
     }
   },
   async mounted() {
-    await this.fetch()
+    await this.fetch();
   },
   methods: {
     async fetch() {
-      await this.$store.dispatch('FETCH_CHANNEL', this.slug)
+      await this.$store.dispatch("FETCH_CHANNEL", this.slug);
     }
   },
   computed: {
     slug() {
-      return this.$route.params.slug
+      return this.$route.params.slug;
     },
     channel() {
-      return this.$store.state.channels[this.slug]
+      return this.$store.state.channels[this.slug];
     },
     info() {
-      return this.$store.state.info[this.slug]
+      return this.$store.state.info[this.slug];
     },
     playerOptions() {
       return {
         fluid: true,
         muted: false,
-        language: 'fa',
+
+        language: "fa",
 
         html5: {
           hlsjsCOnfig: {
@@ -87,16 +103,17 @@ export default {
           }
         },
 
-        poster: require('assets/images/channel/' + this.slug + '.jpg'),
+        poster: require("assets/images/channel/" + this.slug + ".jpg"),
+
         sources: [
           {
-            type: 'application/x-mpegURL',
+            type: "application/x-mpegURL",
             src: `http://tv.aut.ac.ir/live/irib/${this.channel.src}/stream.m3u8`
           }
         ]
-      }
+      };
     }
   }
-}
+};
 </script>
 

@@ -25,8 +25,15 @@ module.exports = {
   modules: [
     ['@nuxtjs/pwa', { workbox: false }],
     '@nuxtjs/axios',
-    ['@nuxtjs/google-analytics', { id: 'UA-108642664-1' }]
+    '@nuxtjs/google-analytics'
   ],
+
+  'google-analytics': {
+    id: 'UA-108642664-1',
+    autoTracking: {
+      exception: true
+    }
+  },
 
   plugins: [
     '~/plugins/app'
