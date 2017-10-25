@@ -108,7 +108,7 @@ export default {
         sources: [
           {
             type: "application/x-mpegURL",
-            src: `//tv.aut.ac.ir/live/irib/${this.channel.src}/stream.m3u8`
+            src: `//live/irib/${this.channel.src}/stream.m3u8`
           }
         ]
       };
