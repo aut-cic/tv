@@ -1,10 +1,14 @@
 <template>
   <div>
+    <h2 class="alert">
+      ⚠️ 
+      <span>.ضمن عرض پوزش بابت اختلالات به وجود آماده و با توجه به آزمایشی بودن سامانه مجددا از فردا ساعت ۱۲ قابل دسترسی خواهد بود</span>
+    </h2>
+
     <h1>
       <i :class="`icon-${channel.slug}`"></i>
       {{ channel.title }}
     </h1>
-
     <video-player v-if="channel.src" class="player" :options="playerOptions" :playsinline="true" />
 
     <div v-else class="player">
@@ -28,6 +32,12 @@
 </template>
 
 <style scoped>
+.alert {
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
 .player {
   background: black;
   width: 100%;
