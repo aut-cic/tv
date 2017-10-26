@@ -105,7 +105,7 @@ export default {
       return {
         fluid: true,
         muted: false,
-        autoplay: true,
+        // autoplay: true,
 
         language: "fa",
 
