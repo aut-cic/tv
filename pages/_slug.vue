@@ -69,14 +69,14 @@ export default {
     };
   },
   beforeDestroy() {
-    const diffMS = Date.now() - this.enter
+    const diffMS = Date.now() - this.enter;
 
     this.$ga.time({
       timingCategory: "Channel Views",
       timingVar: "timeOnPage",
       timingValue: diffMS,
       timingLabel: this.slug
-    })
+    });
   },
   async fetch({ params, redirect }) {
     if (!params.slug) {
@@ -105,7 +105,7 @@ export default {
       return {
         fluid: true,
         muted: false,
-        // autoplay: true,
+        autoplay: true,
 
         language: "fa",
 
