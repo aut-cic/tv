@@ -1,8 +1,10 @@
 <template>
   <div>
-    <h2 class="alert">
+    <p class="alert">
       ⚠️ 
-      <span>.ضمن عرض پوزش بابت اختلالات به وجود آماده و با توجه به آزمایشی بودن سامانه مجددا از فردا ساعت ۱۲ قابل دسترسی خواهد بود</span>
+      <span>
+        با توجه به آزمایشی بودن سامانه ممکن است درحال حاضر با اختلالاتی مواجه باشد. از صبر و شکیبایی شما سپاسگذاریم
+      </span>
     </h2>
 
     <h1>
@@ -118,7 +120,7 @@ export default {
         sources: [
           {
             type: "application/x-mpegURL",
-            src: `http://172.16.4.138/live/irib/${this.channel.src}/stream.m3u8`
+            src: `http://tv.aut.ac.ir/live/${this.channel.src}/stream.m3u8`
           }
         ]
       };

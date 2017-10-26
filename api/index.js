@@ -29,6 +29,10 @@ app.get('/channels/:slug', async (req, res) => {
         return res.status(404).end()
     }
 
+    if (channel.epg_id === 0) {
+        return {}
+    }
+
     const cacheKey = channel.epg_id
     let info = await infoCache.get(cacheKey)
     if (info) {
@@ -67,6 +71,10 @@ app.get('/conductor/:slug', async (req, res) => {
     const channel = getChannelBySlug(req.params.slug)
     if (!channel) {
         return res.status(404).end()
+    }
+
+    if (channel.epg_id === 0) {
+        return {}
     }
 
     const cacheKey = channel.epg_id

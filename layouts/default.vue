@@ -113,7 +113,7 @@ main {
 footer {
   border-top: 1px solid grey;
   color: grey;
-  margin-top: 100px;
+  margin-top: 50px;
   font-size: small;
   font-weight: 100;
 }

@@ -3,86 +3,91 @@
         "epg_id": 31,
         "title": "شبکه یک",
         "slug": "tv1",
-        "src": "101"
+        "src": "irib1/101"
     },
     {
         "epg_id": 32,
         "title": "شبکه دو",
         "slug": "tv2",
-        "src": "102"
+        "src": "irib1/102"
     },
     {
         "epg_id": 33,
         "title": "شبکه سه",
         "slug": "tv3",
-        "src": "103"
+        "src": "irib1/103"
     },
     {
         "epg_id": 34,
         "title": "شبکه چهار",
         "slug": "tv4",
-        "src": "104"
+        "src": "irib1/104"
     },
     {
         "epg_id": 35,
         "title": "شبکه پنج",
         "slug": "tv5",
-        "src": "105"
+        "src": "irib1/105"
     },
     {
         "epg_id": 36,
         "title": "شبکه خبر",
         "slug": "irinn",
-        "src": "106"
+        "src": "irib1/106"
     },
     {
         "epg_id": 37,
         "title": "شبکه آموزش",
         "slug": "amouzesh",
-        "src": "107"
+        "src": "irib1/107"
     },
     {
         "epg_id": 38,
         "title": "شبکه قرآن",
         "slug": "quran",
-        "src": "108"
+        "src": "irib1/108"
     },
     {
         "epg_id": 39,
         "title": "شبکه مستند",
-        "slug": "mostanad"
+        "slug": "mostanad",
+        "src": "irib2/109"
     },
     {
         "epg_id": 42,
         "title": "شبکه نمایش",
-        "slug": "namayesh"
+        "slug": "namayesh",
+        "src": "irib2/112"
     },
     {
         "epg_id": 43,
         "title": "شبکه افق",
-        "slug": "ofogh"
+        "slug": "ofogh",
+        "src": "irib2/113"
     },
     {
         "epg_id": 47,
         "title": "شبکه ورزش",
-        "slug": "varzesh"
+        "slug": "varzesh",
+        "src": "irib2/117"
     },
     {
         "epg_id": 29,
         "title": "شبکه پویا",
-        "slug": "pouya"
+        "slug": "pouya",
+        "src": "irib2/118"
     },
     {
         "epg_id": 48,
         "title": "شبکه سلامت",
         "slug": "salamat",
-        "src": "119"
+        "src": "irib1/119"
     },
     {
         "epg_id": 49,
         "title": "شبکه نسیم",
         "slug": "nasim",
-        "src": "120"
+        "src": "irib1/120"
     },
     {
         "epg_id": 104,
@@ -93,5 +98,23 @@
         "epg_id": 69,
         "title": "شبکه تماشا",
         "slug": "tamasha"
+    },
+    {
+        "epg_id": 0,
+        "title": "شبکه iFilm",
+        "slug": "ifilm",
+        "src": "irib2/114"
+    },
+    {
+        "epg_id": 0,
+        "title": "شبکه PRESS TV",
+        "slug": "press",
+        "src": "irib2/115"
+    },
+    {
+        "epg_id": 0,
+        "title": "شبکه AL-ALAM",
+        "slug": "alalam",
+        "src": "irib2/116"
     }
 ]
