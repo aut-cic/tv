@@ -2,7 +2,7 @@
   <div class="body">
     <nav @click="toggle">
       <img src="~/static/icon.png" height="35px" style="margin-top: -10px;" />
-      <span>تلویزیون اینترنتی امیرکبیر</span>
+      <span>تلویزیون اینترنتی دانشگاه صنعتی امیرکبیر</span>
     </nav>
     <div class="container">
       <aside :class="{ show: sidebar }" onClickaway="toggle">
