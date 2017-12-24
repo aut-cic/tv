@@ -3592,9 +3592,9 @@ mute-stream@0.0.7:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.7.tgz#3075ce93bc21b8fab43e1bc4da7e8115ed1e7bab"
 
-mux.js@4.2.2:
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/mux.js/-/mux.js-4.2.2.tgz#ef3e64003052211257f12ac1f01b3b52c9afff65"
+mux.js@4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/mux.js/-/mux.js-4.3.2.tgz#576d537df037dc5ec35ec1316b948d815d35c210"
 
 nan@^2.3.0:
   version "2.7.0"
@@ -5848,9 +5848,9 @@ video.js@^5.17.0:
     videojs-vtt.js "0.12.4"
     xhr "2.4.0"
 
-video.js@^6.2.8:
-  version "6.2.8"
-  resolved "https://registry.yarnpkg.com/video.js/-/video.js-6.2.8.tgz#e449710bf8513f607456293ae1da97559a94fb97"
+video.js@^6.5.1:
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/video.js/-/video.js-6.5.1.tgz#a191c014fc90043e7ff1f6d50279ae904f65a2b6"
   dependencies:
     babel-runtime "^6.9.2"
     global "4.3.2"
@@ -5867,25 +5867,25 @@ videojs-contrib-hls.js@^3.1.0:
   dependencies:
     hls.js "^0.8.5"
 
-videojs-contrib-hls@^5.11.1:
-  version "5.11.1"
-  resolved "https://registry.yarnpkg.com/videojs-contrib-hls/-/videojs-contrib-hls-5.11.1.tgz#d3dac0e67b911125c4aa0aae73e6d0813fd52bbc"
+videojs-contrib-hls@^5.12.2:
+  version "5.12.2"
+  resolved "https://registry.yarnpkg.com/videojs-contrib-hls/-/videojs-contrib-hls-5.12.2.tgz#6d567a9ceb7dd4049e6bd53dff17b96caa4c339c"
   dependencies:
     aes-decrypter "1.0.3"
     global "^4.3.0"
     m3u8-parser "2.1.0"
-    mux.js "4.2.2"
+    mux.js "4.3.2"
     url-toolkit "1.0.9"
     video.js "^5.19.1 || ^6.2.0"
-    videojs-contrib-media-sources "4.5.3"
+    videojs-contrib-media-sources "4.6.2"
     webworkify "1.0.2"
 
-videojs-contrib-media-sources@4.5.3:
-  version "4.5.3"
-  resolved "https://registry.yarnpkg.com/videojs-contrib-media-sources/-/videojs-contrib-media-sources-4.5.3.tgz#78760a05f98698511a6a630e3b115f8d8b9eb462"
+videojs-contrib-media-sources@4.6.2:
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/videojs-contrib-media-sources/-/videojs-contrib-media-sources-4.6.2.tgz#cfea40752cc80de868b70d0826809157493a19b6"
   dependencies:
     global "^4.3.0"
-    mux.js "4.2.2"
+    mux.js "4.3.2"
     video.js "^5.17.0"
     webworkify "1.0.2"
 

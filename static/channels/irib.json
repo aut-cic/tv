@@ -90,20 +90,28 @@
         "src": "irib1/120"
     },
     {
-        "epg_id": 104,
+        "epg_id": 126,
         "title": "شبکه امید",
-        "slug": "omid"
+        "slug": "omid",
+        "src": "irib3/126"
     },
     {
-        "epg_id": 69,
+        "epg_id": 0,
         "title": "شبکه تماشا",
-        "slug": "tamasha"
+        "slug": "tamasha",
+        "src": "irib3/122"
     },
     {
         "epg_id": 0,
         "title": "شبکه iFilm",
         "slug": "ifilm",
         "src": "irib2/114"
+    },
+    {
+        "epg_id": 134,
+        "title": "شبکه iFilm HD",
+        "slug": "ifilmHD",
+        "src": "irib3/134"
     },
     {
         "epg_id": 0,

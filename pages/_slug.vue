@@ -110,10 +110,10 @@ export default {
         language: "fa",
 
         html5: {
-          hlsjsCOnfig: {
+          hlsjsConfig: {
             withCredentials: false,
             debug: false
-          }
+          },
         },
 
         poster: require("assets/images/channel/" + this.slug + ".jpg"),
