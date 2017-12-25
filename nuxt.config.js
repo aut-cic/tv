@@ -46,10 +46,6 @@ module.exports = {
     }
   ],
 
-  // proxy: {
-  //   '/play': 'http://172.16.4.136:4022',
-  // },
-
   css: [
     '~/assets/css/app.css'
   ],

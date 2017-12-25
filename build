@@ -1,5 +1,5 @@
 #!/bin/bash
 set -xe
 
-#git pull
+git pull
 docker run -it --rm -v `pwd`:/usr/src/app banian/node bash -c 'yarn && yarn build'

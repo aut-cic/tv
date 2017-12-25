@@ -8,27 +8,27 @@
     "start": "nuxt start"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^4.0.1",
-    "@nuxtjs/google-analytics": "^2.0.0",
-    "@nuxtjs/proxy": "^1.1.1",
-    "@nuxtjs/pwa": "^1.0.2",
+    "@nuxtjs/axios": "^4.5.0",
+    "@nuxtjs/google-analytics": "^2.0.2",
+    "@nuxtjs/proxy": "^1.1.3",
+    "@nuxtjs/pwa": "^2.0.4",
     "body-parser": "^1.18.2",
     "cheerio": "^1.0.0-rc.2",
     "express": "^4.16.2",
     "form-data": "^2.3.1",
     "keyv": "^3.0.0",
-    "nuxt": "^1.0.0-r11",
-    "video.js": "^6.5.1",
+    "nuxt": "1.0.0-gh-447b314",
+    "video.js": "^6.4.0",
     "videojs-contrib-hls": "^5.12.2",
     "videojs-contrib-hls.js": "^3.1.0",
     "vue-clickaway": "^2.1.0",
     "vue-spinner": "^1.0.2",
-    "vue-video-player": "^4.0.4"
+    "vue-video-player": "^4.0.6"
   },
   "devDependencies": {
-    "eslint": "^4.6.1",
+    "eslint": "^4.14.0",
     "eslint-plugin-standard": "^3.0.1",
-    "eslint-plugin-vue": "beta",
-    "nodemon": "^1.12.1"
+    "eslint-plugin-vue": "^3.14.0",
+    "nodemon": "^1.14.3"
   }
 }
