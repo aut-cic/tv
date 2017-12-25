@@ -12,9 +12,7 @@ module.exports = {
     theme_color: '#232323'
   },
 
-  loading: {
-    color: 'rgba(255, 34, 85, 0.6)'
-  },
+  loading: false,
 
   loadingIndicator: {
     name: false,

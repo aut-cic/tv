@@ -5823,9 +5823,9 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-uglify-es@^3.2.1:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/uglify-es/-/uglify-es-3.3.1.tgz#7556b208d3ac8584e81a2b70fff424abbcd7e3cc"
+uglify-es@3.2.2, uglify-es@^3.2.1:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/uglify-es/-/uglify-es-3.2.2.tgz#15c62b7775002c81b7987a1c49ecd3f126cace73"
   dependencies:
     commander "~2.12.1"
     source-map "~0.6.1"

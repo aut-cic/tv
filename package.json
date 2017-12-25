@@ -30,5 +30,8 @@
     "eslint-plugin-standard": "^3.0.1",
     "eslint-plugin-vue": "^3.14.0",
     "nodemon": "^1.14.3"
+  },
+  "resolutions": {
+    "uglify-es": "3.2.2"
   }
 }
