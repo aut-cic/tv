@@ -3,126 +3,222 @@
         "epg_id": 31,
         "title": "شبکه یک",
         "slug": "tv1",
-        "src": "irib1/101"
+        "src": "irib5/1"
     },
     {
         "epg_id": 32,
         "title": "شبکه دو",
         "slug": "tv2",
-        "src": "irib1/102"
+        "src": "irib5/2"
     },
     {
         "epg_id": 33,
         "title": "شبکه سه",
         "slug": "tv3",
-        "src": "irib1/103"
+        "src": "irib5/3"
     },
     {
         "epg_id": 34,
         "title": "شبکه چهار",
         "slug": "tv4",
-        "src": "irib1/104"
+        "src": "irib5/4"
     },
     {
         "epg_id": 35,
         "title": "شبکه پنج",
         "slug": "tv5",
-        "src": "irib1/105"
+        "src": "irib5/5"
     },
     {
         "epg_id": 36,
         "title": "شبکه خبر",
         "slug": "irinn",
-        "src": "irib1/106"
+        "src": "irib5/6"
     },
     {
         "epg_id": 37,
         "title": "شبکه آموزش",
         "slug": "amouzesh",
-        "src": "irib1/107"
+        "src": "irib5/7"
     },
     {
         "epg_id": 38,
         "title": "شبکه قرآن",
         "slug": "quran",
-        "src": "irib1/108"
+        "src": "irib5/8"
     },
     {
         "epg_id": 39,
         "title": "شبکه مستند",
         "slug": "mostanad",
-        "src": "irib2/109"
+        "src": "irib5/9"
     },
     {
         "epg_id": 42,
         "title": "شبکه نمایش",
         "slug": "namayesh",
-        "src": "irib2/112"
+        "src": "irib5/12"
     },
     {
         "epg_id": 43,
         "title": "شبکه افق",
         "slug": "ofogh",
-        "src": "irib2/113"
+        "src": "irib5/13"
     },
     {
         "epg_id": 47,
         "title": "شبکه ورزش",
         "slug": "varzesh",
-        "src": "irib2/117"
+        "src": "irib5/17"
     },
     {
         "epg_id": 29,
         "title": "شبکه پویا",
         "slug": "pouya",
-        "src": "irib2/118"
+        "src": "irib5/18"
     },
     {
         "epg_id": 48,
         "title": "شبکه سلامت",
         "slug": "salamat",
-        "src": "irib1/119"
+        "src": "irib5/19"
     },
     {
         "epg_id": 49,
         "title": "شبکه نسیم",
         "slug": "nasim",
-        "src": "irib1/120"
+        "src": "irib5/20"
     },
     {
-        "epg_id": 126,
+        "epg_id": 104,
         "title": "شبکه امید",
         "slug": "omid",
-        "src": "irib3/126"
+        "src": "irib5/22"
     },
     {
-        "epg_id": 0,
+        "epg_id": 69,
         "title": "شبکه تماشا",
         "slug": "tamasha",
-        "src": "irib3/122"
+        "src": "irib5/23"
     },
     {
-        "epg_id": 0,
+        "epg_id": 44,
         "title": "شبکه iFilm",
         "slug": "ifilm",
-        "src": "irib2/114"
+        "src": "irib5/14"
     },
     {
-        "epg_id": 134,
+        "epg_id": 44,
         "title": "شبکه iFilm HD",
-        "slug": "ifilmHD",
-        "src": "irib3/134"
+        "slug": "ifilm-farsi",
+        "src": "irib5/14"
     },
     {
-        "epg_id": 0,
+        "epg_id": 45,
         "title": "شبکه PRESS TV",
-        "slug": "press",
-        "src": "irib2/115"
+        "slug": "preestv",
+        "src": "irib5/15"
     },
     {
-        "epg_id": 0,
+        "epg_id": 33,
+        "title": "شبکه سهHD",
+        "slug": "tv3hd",
+        "src": "irib5/25"
+    },
+    {
+        "epg_id": 46,
         "title": "شبکه AL-ALAM",
         "slug": "alalam",
-        "src": "irib2/116"
+        "src": "irib5/16"
+    },
+    {
+        "epg_id": 23,
+        "title": "راديو آوا",
+        "slug": "r-ava",
+        "src": "irib5/202"
+    },
+    {
+        "epg_id": 22,
+        "title": "راديو اقتصاد",
+        "slug": "r-eghtesad",
+        "src": "irib5/210"
+    },
+    {
+        "epg_id": 51,
+        "title": "راديو ايران",
+        "slug": "r-iran",
+        "src": "irib5/201"
+    },
+    {
+        "epg_id": 26,
+        "title": "راديو جوان",
+        "slug": "r-javan",
+        "src": "irib5/203"
+    },
+    {
+        "epg_id": 53,
+        "title": "راديو فرهنگ",
+        "slug": "r-farhang",
+        "src": "irib5/211"
+    },
+    {
+        "epg_id": 52,
+        "title": "راديو قرآن",
+        "slug": "r-quran",
+        "src": "irib5/204"
+    },
+    {
+        "epg_id": 55,
+        "title": "راديو ورزش",
+        "slug": "r-varzesh",
+        "src": "irib5/215"
+    },
+    {
+        "epg_id": 24,
+        "title": "راديو پیام",
+        "slug": "r-payam",
+        "src": "irib5/207"
+    },
+    {
+        "epg_id": 57,
+        "title": "راديو گفتگو",
+        "slug": "r-goftegoo",
+        "src": "irib5/212"
+    },
+    {
+        "epg_id": 56,
+        "title": "رادیو تلاوت",
+        "slug": "r-talavat",
+        "src": "irib5/206"
+    },
+    {
+        "epg_id": 21,
+        "title": "رادیو تهران",
+        "slug": "r-tehran",
+        "src": "irib5/213"
+    },
+    {
+        "epg_id": 54,
+        "title": "رادیو سلامت",
+        "slug": "r-salamat",
+        "src": "irib5/214"
+    },
+    {
+        "epg_id": 28,
+        "title": "رادیو صبا",
+        "slug": "r-saba",
+        "src": "irib5/209"
+    },
+    {
+        "epg_id": 27,
+        "title": "رادیو معارف",
+        "slug": "r-maaref",
+        "src": "irib5/216"
+    },
+    {
+        "epg_id": 25,
+        "title": "رادیو نمایش",
+        "slug": "r-namayesh",
+        "src": "irib5/205"
     }
 ]
