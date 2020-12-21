@@ -78,6 +78,9 @@
 .icon-tv3:before {
   content: "\e911";
 }
+.icon-tv3hd:before {
+  content: "\e911";
+}
 .icon-tv4:before {
   content: "\e912";
 }
