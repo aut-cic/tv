@@ -80,7 +80,7 @@ export default {
   },
   async fetch({ params, redirect }) {
     if (!params.slug) {
-      return redirect("/tv1");
+      return redirect("/tv2");
     }
   },
   async mounted() {
@@ -121,7 +121,7 @@ export default {
         sources: [
           {
             type: "application/x-mpegURL",
-            src: `http://tv.aut.ac.ir/live/${this.channel.src}/stream.m3u8`
+            src: `http://tv2.aut.ac.ir/live/${this.channel.src}/stream.m3u8`
           }
         ]
       };
