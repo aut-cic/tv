@@ -5,6 +5,12 @@
 Amirkabir University of Tech. online TV avaiable from campus on [tv.aut.ac.ir](https://tv.aut.ac.ir).
 This project is soley written by Pooya Parsa and here we only archive it and tries to maintain it.
 
+## Know Isssues
+
+- [ ] Use standard Nodejs image
+- [ ] Update components and nuxtjs
+- [ ] Use variable instead of hard-coding the tv url
+
 ## Inferastructure
 
 Following servers are available as online tv at AUT.
