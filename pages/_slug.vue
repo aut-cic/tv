@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- <p class="alert">
-      ⚠️ 
+      ⚠️
       <span>
         با توجه به آزمایشی بودن سامانه ممکن است درحال حاضر با اختلالاتی مواجه باشد. از صبر و شکیبایی شما سپاسگذاریم
       </span>
@@ -69,14 +69,6 @@ export default {
     };
   },
   beforeDestroy() {
-    const diffMS = Date.now() - this.enter;
-
-    this.$ga.time({
-      timingCategory: "Channel Views",
-      timingVar: "timeOnPage",
-      timingValue: diffMS,
-      timingLabel: this.slug
-    });
   },
   async fetch({ params, redirect }) {
     if (!params.slug) {
@@ -129,4 +121,3 @@ export default {
   }
 };
 </script>
-
