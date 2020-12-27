@@ -24,7 +24,6 @@
       </footer>
       </main>
     </div>
-    
   </div>
 </template>
 
