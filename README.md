@@ -1,6 +1,8 @@
 # AUT TV
 
 [![Drone (cloud)](https://img.shields.io/drone/build/aut-cic/tv.svg?style=flat-square&logo=drone)](https://cloud.drone.io/aut-cic/tv)
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/1995parham/aut-tv/latest?style=flat-square&logo=docker)
+![Docker Pulls](https://img.shields.io/docker/pulls/1995parham/aut-tv?style=flat-square&logo=docker)
 
 ## Introduction
 

@@ -1,0 +1,8 @@
+---
+version: '3'
+services:
+  tv:
+    image: 1995parham/aut-tv
+    ports:
+      - "8080:8080"
+    restart: always
