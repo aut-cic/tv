@@ -4,6 +4,11 @@ kind: pipeline
 name: default
 
 steps:
+  - name: lint
+    image: node
+    commands:
+      - npm install --also=dev
+      - npx eslint .
   - name: build
     image: node
     commands:
