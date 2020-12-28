@@ -1,5 +1,7 @@
 # AUT TV
 
+[![Drone (cloud)](https://img.shields.io/drone/build/aut-cic/tv.svg?style=flat-square&logo=drone)](https://cloud.drone.io/aut-cic/tv)
+
 ## Introduction
 
 Amirkabir University of Tech. online TV avaiable from campus on [tv.aut.ac.ir](https://tv.aut.ac.ir).
