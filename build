@@ -1,5 +1,0 @@
-#!/bin/bash
-set -xe
-
-git pull
-docker run -it --rm -v `pwd`:/usr/src/app banian/node bash -c 'npm && npx nuxt build'
