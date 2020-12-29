@@ -32,5 +32,5 @@ export default {
     },
   ],
 
-  css: ["~/assets/css/app.css"],
+  css: ["~/assets/css/app.css", "~/node_modules/vazir-font/dist/font-face.css"],
 };
