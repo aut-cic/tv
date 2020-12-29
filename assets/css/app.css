@@ -1,37 +1,39 @@
-@import "./fontiran.css";
+@import "./vazir.css";
 @import "../fonts/irib/irib.css";
 
-html, body {
-    margin: 0;
-    background: #131313;
-    color: white;
-    direction: rtl;
-    text-align: right;
-    font-family: IRANSans, sans-serif;
-    font-smooth: always;
-    image-rendering: crisp-edges;
-    -webkit-font-smoothing: antialiased;
+html,
+body {
+  margin: 0;
+  background: #131313;
+  color: white;
+  direction: rtl;
+  text-align: right;
+  font-family: IRANSans, sans-serif;
+  font-smooth: always;
+  image-rendering: crisp-edges;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 a.nuxt-link-active {
-    color: rgba(255, 34, 85, 1) !important
+  color: rgba(255, 34, 85, 1) !important;
 }
 
 .progress {
-    z-index: 1000000;
-}
-  
-.page-enter-active, .page-leave-active {
-    transition: all .3s cubic-bezier(0.86, 0, 0.07, 1);
-    opacity: 1;
+  z-index: 1000000;
 }
 
-.page-enter, .page-leave-active {
-    opacity: 0;
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+  opacity: 1;
 }
-  
+
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+}
