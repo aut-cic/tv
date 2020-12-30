@@ -134,7 +134,7 @@
   {
     "epg_id": 33,
     "title": "شبکه سهHD",
-    "slug": "tv3hd",
+    "slug": "tv3-hd",
     "src": "irib5/24"
   },
   {
@@ -153,90 +153,90 @@
     "epg_id": 23,
     "title": "راديو آوا",
     "slug": "r-ava",
-    "src": "irib5/202"
+    "src": "irib5/102"
   },
   {
     "epg_id": 22,
     "title": "راديو اقتصاد",
     "slug": "r-eghtesad",
-    "src": "irib5/210"
+    "src": "irib5/110"
   },
   {
     "epg_id": 51,
     "title": "راديو ايران",
     "slug": "r-iran",
-    "src": "irib5/201"
+    "src": "irib5/101"
   },
   {
     "epg_id": 26,
     "title": "راديو جوان",
     "slug": "r-javan",
-    "src": "irib5/203"
+    "src": "irib5/103"
   },
   {
     "epg_id": 53,
     "title": "راديو فرهنگ",
     "slug": "r-farhang",
-    "src": "irib5/211"
+    "src": "irib5/108"
   },
   {
     "epg_id": 52,
     "title": "راديو قرآن",
     "slug": "r-quran",
-    "src": "irib5/204"
+    "src": "irib5/107"
   },
   {
     "epg_id": 55,
     "title": "راديو ورزش",
     "slug": "r-varzesh",
-    "src": "irib5/215"
+    "src": "irib5/105"
   },
   {
     "epg_id": 24,
     "title": "راديو پیام",
     "slug": "r-payam",
-    "src": "irib5/207"
+    "src": "irib5/104"
   },
   {
     "epg_id": 57,
     "title": "راديو گفتگو",
     "slug": "r-goftegoo",
-    "src": "irib5/212"
+    "src": "irib5/111"
   },
   {
     "epg_id": 56,
     "title": "رادیو تلاوت",
     "slug": "r-talavat",
-    "src": "irib5/206"
+    "src": "irib5/116"
   },
   {
     "epg_id": 21,
     "title": "رادیو تهران",
     "slug": "r-tehran",
-    "src": "irib5/213"
+    "src": "irib5/113"
   },
   {
     "epg_id": 54,
     "title": "رادیو سلامت",
     "slug": "r-salamat",
-    "src": "irib5/214"
+    "src": "irib5/109"
   },
   {
     "epg_id": 28,
     "title": "رادیو صبا",
     "slug": "r-saba",
-    "src": "irib5/209"
+    "src": "irib5/114"
   },
   {
     "epg_id": 27,
     "title": "رادیو معارف",
     "slug": "r-maaref",
-    "src": "irib5/216"
+    "src": "irib5/106"
   },
   {
     "epg_id": 25,
     "title": "رادیو نمایش",
     "slug": "r-namayesh",
-    "src": "irib5/205"
+    "src": "irib5/112"
   }
 ]
