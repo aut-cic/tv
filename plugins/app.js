@@ -1,9 +1,7 @@
 import Vue from "vue";
-import "video.js";
 import VueVideoPlayer from "vue-video-player";
 
 import "video.js/dist/video-js.css";
-import "video.js/dist/lang/fa";
 
 import "@videojs/http-streaming";
 
