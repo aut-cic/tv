@@ -102,10 +102,12 @@ export default {
         language: "fa",
 
         html5: {
-          hlsjsConfig: {
+          vhs: {
             withCredentials: false,
-            debug: false
+            overrideNative: true
           },
+          nativeAudioTracks: false,
+          nativeVideoTracks: false
         },
 
         poster: require("assets/images/channel/" + this.slug + ".jpg"),
