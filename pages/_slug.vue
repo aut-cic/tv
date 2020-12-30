@@ -102,7 +102,7 @@ export default {
         language: "fa",
 
         html5: {
-          vhs: {
+          hls: {
             withCredentials: false,
             overrideNative: true
           },
