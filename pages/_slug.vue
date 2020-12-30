@@ -11,10 +11,7 @@
       <i :class="`icon-${channel.slug}`"></i>
       {{ channel.title }}
     </h1>
-    <div class="player"
-       v-if="channel.src"
-       v-video-player:mainPlayer="playerOptions">
-    </div>
+    <video-player v-if="channel.src" class="player" :options="playerOptions" :playsinline="true" />
 
     <div v-else class="player">
       <span>امکان پخش این کانال  به زودی</span>
@@ -68,30 +65,7 @@ h1 {
 export default {
   data() {
     return {
-      enter: Date.now(),
-      playerOptions: {
-        fluid: true,
-        muted: false,
-        autoplay: true,
-
-        language: "fa",
-
-        html5: {
-          hlsjsConfig: {
-            withCredentials: false,
-            debug: false
-          },
-        },
-
-        poster: require("assets/images/channel/" + this.slug + ".jpg"),
-
-        sources: [
-          {
-            type: "application/x-mpegURL",
-            src: `http://tv2.aut.ac.ir/live/${this.channel.src}/stream.m3u8`
-          }
-        ]
-      }
+      enter: Date.now()
     };
   },
   beforeDestroy() {
@@ -119,6 +93,31 @@ export default {
     info() {
       return this.$store.state.info[this.slug];
     },
+    playerOptions() {
+      return {
+        fluid: true,
+        muted: false,
+        autoplay: true,
+
+        language: "fa",
+
+        html5: {
+          hlsjsConfig: {
+            withCredentials: false,
+            debug: false
+          },
+        },
+
+        poster: require("assets/images/channel/" + this.slug + ".jpg"),
+
+        sources: [
+          {
+            type: "application/x-mpegURL",
+            src: `http://tv2.aut.ac.ir/live/${this.channel.src}/stream.m3u8`
+          }
+        ]
+      };
+    }
   }
 };
 </script>
