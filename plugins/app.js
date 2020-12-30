@@ -1,15 +1,12 @@
 import Vue from "vue";
+import VueVideoPlayer from "vue-video-player";
 
-if (process.browser) {
-  const VueVideoPlayer = require("vue-video-player/dist/ssr");
+import "video.js/dist/video-js.css";
+import "video.js/dist/lang/fa";
 
-  require("video.js/dist/video-js.css");
-  require("video.js/dist/lang/fa");
+import "@videojs/http-streaming";
 
-  require("@videojs/http-streaming");
-
-  Vue.use(VueVideoPlayer);
-}
+Vue.use(VueVideoPlayer);
 
 export default async function({ store }) {
   await store.dispatch("FETCH_CHANNELS");
