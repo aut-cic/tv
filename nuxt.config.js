@@ -2,6 +2,8 @@ export default {
   ssr: false,
   dev: false,
 
+  components: true,
+
   build: {
     extractCSS: true,
   },

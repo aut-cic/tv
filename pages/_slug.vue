@@ -69,7 +69,6 @@ export default {
       enter: Date.now()
     };
   },
-	components: true,
   beforeDestroy() {
   },
   async fetch({ params, redirect }) {
