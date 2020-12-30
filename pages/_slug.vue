@@ -11,7 +11,7 @@
       <i :class="`icon-${channel.slug}`"></i>
       {{ channel.title }}
     </h1>
-    <video-player v-if="channel.src" class="player" :options="playerOptions" :playsinline="true" />
+    <VideoPlayer v-if="channel.src" class="player" :options="playerOptions" :playsinline="true" />
 
     <div v-else class="player">
       <span>امکان پخش این کانال  به زودی</span>
@@ -62,7 +62,6 @@ h1 {
 </style>
 
 <script>
-import VideoPlayer from "@/components/VideoPlayer.vue";
 
 export default {
   data() {
@@ -70,9 +69,7 @@ export default {
       enter: Date.now()
     };
   },
-	components: {
-		VideoPlayer
-	},
+	components: true,
   beforeDestroy() {
   },
   async fetch({ params, redirect }) {
