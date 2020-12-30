@@ -20,8 +20,7 @@
     "vazir-font": "^27.1.0",
     "video.js": "^7.10.2",
     "vue-clickaway": "^2.2.2",
-    "vue-spinner": "^1.0.4",
-    "vue-video-player": "^5.0.2"
+    "vue-spinner": "^1.0.4"
   },
   "devDependencies": {
     "eslint": "^4.14.0",

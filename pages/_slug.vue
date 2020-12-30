@@ -62,12 +62,17 @@ h1 {
 </style>
 
 <script>
+import VideoPlayer from "@/components/VideoPlayer.vue";
+
 export default {
   data() {
     return {
       enter: Date.now()
     };
   },
+	components: {
+		VideoPlayer
+	},
   beforeDestroy() {
   },
   async fetch({ params, redirect }) {
@@ -102,7 +107,7 @@ export default {
         language: "fa",
 
         html5: {
-          hls: {
+          vhs: {
             withCredentials: false,
             overrideNative: true
           },
@@ -115,7 +120,7 @@ export default {
         sources: [
           {
             type: "application/x-mpegURL",
-            src: `http://tv2.aut.ac.ir/live/${this.channel.src}/stream.m3u8`
+            src: `/live/${this.channel.src}/stream.m3u8`
           }
         ]
       };

@@ -23,15 +23,11 @@ export default {
   },
   actions: {
     async FETCH_CHANNELS({ commit }) {
-      const { channels } = await this.$axios.$get(
-        "http://tv2.aut.ac.ir/api/channels"
-      );
+      const { channels } = await this.$axios.$get("/api/channels");
       commit("SET_CHANNELS", channels);
     },
     async FETCH_CHANNEL({ commit }, slug) {
-      const { info } = await this.$axios.$get(
-        "http://tv2.aut.ac.ir/api/channels/" + slug
-      );
+      const { info } = await this.$axios.$get("/api/channels/" + slug);
       commit("SET_CHANNEL", { slug, info });
     },
   },
