@@ -123,31 +123,31 @@
     "epg_id": 46,
     "title": "شبکه AL-ALAM",
     "slug": "alalam",
-    "src": "irib5/21"
+    "src": "irib5/28"
   },
   {
     "epg_id": 45,
     "title": "شبکه PRESS TV",
     "slug": "preestv",
-    "src": "irib5/23"
+    "src": "irib5/30"
   },
   {
     "epg_id": 33,
     "title": "شبکه سهHD",
     "slug": "tv3-hd",
-    "src": "irib5/24"
+    "src": "irib5/52"
   },
   {
     "epg_id": 69,
     "title": "شبکه تماشا",
     "slug": "tamasha-hd",
-    "src": "irib5/25"
+    "src": "irib5/53"
   },
   {
     "epg_id": 39,
     "title": "شبکه مستند",
     "slug": "mostanad-hd",
-    "src": "irib5/26"
+    "src": "irib5/54"
   },
   {
     "epg_id": 23,
