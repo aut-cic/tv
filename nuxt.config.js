@@ -6,6 +6,13 @@ export default {
 
   build: {
     extractCSS: true,
+    babel: {
+      presets(env, [ preset, options ]) {
+        return [
+          [ "@babel/preset-env", options ]
+        ]
+      }
+    },
   },
 
   manifest: {
