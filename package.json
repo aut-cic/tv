@@ -18,7 +18,7 @@
     "form-data": "^2.5.1",
     "keyv": "^3.1.0",
     "nuxt": "^2.14.12",
-    "regenerator-runtime": "^0.13.7",
+    "regenerator-runtime": "^0.13.9",
     "vazir-font": "^27.1.0",
     "video.js": "^7.10.2",
     "vue-clickaway": "^2.2.2",
