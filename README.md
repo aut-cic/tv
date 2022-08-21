@@ -1,15 +1,18 @@
-# AUT TV
+<h1 align="center">AUT TV</h1>
 
-[![Drone (cloud)](https://img.shields.io/drone/build/aut-cic/tv.svg?style=flat-square&logo=drone)](https://cloud.drone.io/aut-cic/tv)
-![Docker Image Size (tag)](https://img.shields.io/docker/image-size/1995parham/aut-tv/latest?style=flat-square&logo=docker)
-![Docker Pulls](https://img.shields.io/docker/pulls/1995parham/aut-tv?style=flat-square&logo=docker)
+<p align="center">
+  <img src="https://img.shields.io/github/workflow/status/aut-cic/tv/ci?label=ci&logo=github&style=for-the-badge" alt="GitHub Workflow Status">
+  <img alt="GitHub" src="https://img.shields.io/github/license/aut-cic/tv?logo=gnu&style=for-the-badge">
+  <img alt="GitHub Pipenv locked Python version" src="https://img.shields.io/github/pipenv/locked/python-version/aut-cic/tv?logo=python&style=for-the-badge">
+  <img alt="GitHub release (latest SemVer including pre-releases)" src="https://img.shields.io/github/v/release/aut-cic/tv?include_prereleases&logo=github&style=for-the-badge">
+</p>
 
 ## Introduction
 
 Amirkabir University of Tech. online TV avaiable from campus on [tv.aut.ac.ir](https://tv.aut.ac.ir).
 This project is soley written by Pooya Parsa and here we only archive it and tries to maintain it.
 
-## Know Isssues
+## Known Issues
 
 - [x] Use standard Nodejs image
 - [x] Update components and nuxtjs
