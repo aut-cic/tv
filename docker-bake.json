@@ -1,0 +1,17 @@
+{
+  "group": {
+    "default": {
+      "targets": [
+        "tv"
+      ]
+    }
+  },
+  "target": {
+    "internet": {
+      "dockerfile": "Dockerfile",
+      "tags": [
+        "ghcr.io/aut-cic/tv"
+      ]
+    }
+  }
+}
