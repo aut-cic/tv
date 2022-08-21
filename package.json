@@ -27,7 +27,7 @@
   "devDependencies": {
     "eslint": "^4.14.0",
     "eslint-plugin-standard": "^3.0.1",
-    "eslint-plugin-vue": "^3.14.0",
+    "eslint-plugin-vue": "^4.7.1",
     "nodemon": "^1.14.3"
   },
   "resolutions": {
