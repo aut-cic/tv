@@ -16,7 +16,7 @@
     "cheerio": "0.22.0",
     "express": "^4.17.1",
     "form-data": "^4.0.0",
-    "keyv": "^3.1.0",
+    "keyv": "^4.3.3",
     "nuxt": "^2.12.2",
     "regenerator-runtime": "^0.13.7",
     "vazir-font": "^27.1.0",
