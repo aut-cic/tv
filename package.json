@@ -17,7 +17,7 @@
     "express": "^4.17.1",
     "form-data": "^2.5.1",
     "keyv": "^3.1.0",
-    "nuxt": "^2.14.12",
+    "nuxt": "^2.12.2",
     "regenerator-runtime": "^0.13.7",
     "vazir-font": "^27.1.0",
     "video.js": "^7.10.2",
@@ -25,10 +25,10 @@
     "vue-spinner": "^1.0.4"
   },
   "devDependencies": {
-    "eslint": "^4.14.0",
+    "eslint": "^8.22.0",
     "eslint-plugin-standard": "^3.0.1",
     "eslint-plugin-vue": "^3.14.0",
-    "nodemon": "^1.14.3"
+    "nodemon": "^2.0.19"
   },
   "resolutions": {
     "uglify-es": "3.2.2"
