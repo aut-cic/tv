@@ -7,7 +7,7 @@
     }
   },
   "target": {
-    "internet": {
+    "tv": {
       "dockerfile": "Dockerfile",
       "tags": [
         "ghcr.io/aut-cic/tv"
