@@ -1,6 +1,8 @@
 # Dockerfile
 FROM node:alpine
 
+ENV NODE_OPTIONS=--openssl-legacy-provider
+
 # create destination directory
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
