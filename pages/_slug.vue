@@ -98,7 +98,8 @@ export default {
       return {
         fluid: true,
         muted: false,
-        autoplay: true,
+        autoplay: false,
+        controls: true
 
         language: "fa",
 
