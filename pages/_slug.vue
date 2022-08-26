@@ -99,7 +99,7 @@ export default {
         fluid: true,
         muted: false,
         autoplay: false,
-        controls: true
+        controls: true,
 
         language: "fa",
 
