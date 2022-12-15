@@ -1,7 +1,7 @@
 <h1 align="center">AUT TV</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/github/workflow/status/aut-cic/tv/ci?label=ci&logo=github&style=for-the-badge" alt="GitHub Workflow Status">
+  <img src="https://img.shields.io/github/actions/workflow/status/aut-cic/tv/ci.yml?label=ci&logo=github&style=for-the-badge&branch=main" alt="GitHub Workflow Status">
   <img alt="GitHub" src="https://img.shields.io/github/license/aut-cic/tv?logo=gnu&style=for-the-badge">
   <img alt="GitHub release (latest SemVer including pre-releases)" src="https://img.shields.io/github/v/release/aut-cic/tv?include_prereleases&logo=github&style=for-the-badge">
 </p>
